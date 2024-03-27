@@ -1,6 +1,5 @@
-// src/components/HomePage.js
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -14,8 +13,10 @@ const HomePage = () => {
       </section>
       <nav>
         <ul>
-          <li><a href="#rent">Rent a Car</a></li>
-          <li><a href="#browse">Browse Cars</a></li>
+          <li><Link to="/rent-car">Rent a Car</Link></li>
+          <li><Link to="/browse-cars">Browse Cars</Link></li>
+          <li><Link to="/rental-history">Rental History</Link></li>
+          <li><Link to="/duration-cost-chart">Duration/Cost Chart</Link></li>
         </ul>
       </nav>
     </div>

@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#rent">Rent a Car</a></li>
-        <li><a href="#browse">Browse Cars</a></li>
-        <li><a href="#history">Rental History</a></li>
-        {/* Add additional navigation items as needed */}
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/rent-car">Rent a Car</Link></li>
+        <li><Link to="/rental-history">Rental History</Link></li>
+        <li><Link to="/browse-cars">Browse Cars</Link></li>
+        <li><Link to="/duration-cost-chart">Duration/Cost Chart</Link></li>
       </ul>
     </nav>
   );
