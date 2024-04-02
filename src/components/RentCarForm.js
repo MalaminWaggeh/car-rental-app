@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
+import './RentCarForm.css'; // Make sure to create this CSS file
 
 const RentCarForm = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const [carModel, setCarModel] = useState('');
   const [rentalDuration, setRentalDuration] = useState('');
   const [pickupLocation, setPickupLocation] = useState('');
@@ -8,31 +15,33 @@ const RentCarForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here (e.g., send data to backend API)
     console.log('Form submitted:', { carModel, rentalDuration, pickupLocation, dropoffLocation });
   };
 
   return (
-    <div>
-      <h2>Rent a Car</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Car Model:
+    <div className={`rent-car-container ${menuOpen ? 'open' : ''}`}>
+      <header>
+        <h1>Enter Car Details</h1>
+        
+      </header>
+      <form onSubmit={handleSubmit} className="rent-car-form">
+        <div className="form-group">
+          <label>Car Model:</label>
           <input type="text" value={carModel} onChange={(e) => setCarModel(e.target.value)} />
-        </label>
-        <label>
-          Rental Duration (Days):
+        </div>
+        <div className="form-group">
+          <label>Rental Duration (Days):</label>
           <input type="number" value={rentalDuration} onChange={(e) => setRentalDuration(e.target.value)} />
-        </label>
-        <label>
-          Pickup Location:
+        </div>
+        <div className="form-group">
+          <label>Pickup Location:</label>
           <input type="text" value={pickupLocation} onChange={(e) => setPickupLocation(e.target.value)} />
-        </label>
-        <label>
-          Drop-off Location:
+        </div>
+        <div className="form-group">
+          <label>Drop-off Location:</label>
           <input type="text" value={dropoffLocation} onChange={(e) => setDropoffLocation(e.target.value)} />
-        </label>
-        <button type="submit">Rent Now</button>
+        </div>
+        <button type="submit" className="rent-now-btn">Rent Now</button>
       </form>
     </div>
   );

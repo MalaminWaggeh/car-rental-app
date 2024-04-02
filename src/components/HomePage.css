@@ -76,3 +76,11 @@
     height: auto;
   }
   
+  @media (max-width: 768px) {
+    .car-cards {
+      flex-direction: column;
+    }
+    .car-card {
+      flex: 0 0 100%;
+    }
+  }

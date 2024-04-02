@@ -1,0 +1,25 @@
+/* RentalHistory.css */
+
+.rental-history-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .rental-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .rental-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rental-item p {
+    margin: 5px 0;
+  }
+  

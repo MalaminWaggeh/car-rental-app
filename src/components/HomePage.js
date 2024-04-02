@@ -86,7 +86,7 @@ const HomePage = () => {
             />
             <div className="car-details">
               <h3><strong>Car 3</strong> - Lotus Emira</h3>
-              <p>Description of Car 3</p>
+              <p>Reliable, smooth driving</p>
               <button>Rent Me</button>
             </div>
           </div>
@@ -97,8 +97,8 @@ const HomePage = () => {
               className="car-image"
             />
             <div className="car-details">
-              <h3><strong>Car 4</strong> - Unknown Car Model</h3>
-              <p>Description of Car 4</p>
+              <h3><strong>Toyota Camry 2021 Sport</strong>  </h3>
+              <p>Reliable, smooth driving</p>
               <button>Rent Me</button>
             </div>
           </div>
