@@ -1,12 +1,12 @@
-// BrowseCars.js
+
 
 import React, { useState } from 'react';
-import './BrowseCars.css'; // Import CSS file for styling
+import './BrowseCars.css'; 
 
 const BrowseCars = () => {
   const [searchTerm, setSearchTerm] = useState('');
   
-  // Dummy car listings data (replace with actual data later)
+  // Dummy car listings data 
   const carListings = [
     { id: 1, model: 'Toyota Corolla', rentalPrice: 50, description: 'Compact sedan with great fuel efficiency' },
     { id: 2, model: 'Honda Civic', rentalPrice: 60, description: 'Reliable and comfortable sedan for city driving' },

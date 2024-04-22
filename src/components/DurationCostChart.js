@@ -1,8 +1,8 @@
 import React from 'react';
-import './DurationCostChart.css'; // Import CSS file for styling
+import './DurationCostChart.css'; 
 
 const DurationCostChart = () => {
-  // Dummy duration/cost data (replace with actual data later)
+  // Dummy duration/cost data 
   const durationCostData = [
     { duration: 1, cost: 50 },
     { duration: 2, cost: 90 },
@@ -14,7 +14,7 @@ const DurationCostChart = () => {
     { duration: 8, cost: 270 },
     { duration: 9, cost: 300 },
     { duration: 10, cost: 330 },
-    // Add more duration/cost data as needed
+    
   ];
 
   return (

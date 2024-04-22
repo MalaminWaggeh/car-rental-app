@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./HomePage.css"; // Import CSS file for styling
+import "./HomePage.css";
 
 const HomePage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
